@@ -26,7 +26,10 @@ A modern, interactive portfolio website inspired by Persona 3 Reload's UI design
 
 [View Live Portfolio](https://rohitpoul.github.io/Person-3-Reload-Potfolio/)
 
-## 📸 Screenshots
+## 📸 Screenshots & Demo
+
+### Demo
+![Portfolio Demo](screenshots/demo.gif)
 
 ### Main Menu
 ![Main Menu](screenshots/main-menu.png)
@@ -184,7 +187,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Persona 3 Reload by Atlus for design inspiration
+- [Persona 3 Reload](https://persona.atlus.com/p3r/) by Atlus for design inspiration
 - React and Vite communities for excellent tools
 - Framer Motion for smooth animations
 
