@@ -7,7 +7,7 @@ A modern, interactive portfolio website inspired by Persona 3 Reload's UI design
 ![Vite](https://img.shields.io/badge/Vite-8.0.1-646CFF?style=for-the-badge&logo=vite)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-## 🎮 Features
+## Features
 
 - **Persona 3 Themed UI** - Authentic design inspired by Persona 3 Reload
 - **Interactive Navigation** - Smooth page transitions with Framer Motion
@@ -22,11 +22,11 @@ A modern, interactive portfolio website inspired by Persona 3 Reload's UI design
   - Socials - Connect via GitHub, LinkedIn, and Email
   - Side Projects - Featured work and demos
 
-## 🚀 Live Demo
+## Live Demo
 
 [View Live Portfolio](https://rohitpoul.github.io/Person-3-Reload-Potfolio/)
 
-## 📸 Screenshots & Demo
+## Screenshots
 
 ### Demo
 ![Portfolio Demo](screenshots/demo.gif)
@@ -40,7 +40,7 @@ A modern, interactive portfolio website inspired by Persona 3 Reload's UI design
 ### Resume
 ![Resume](screenshots/resume.png)
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend Framework:** React 19.2.4
 - **Build Tool:** Vite 8.0.1
@@ -49,7 +49,7 @@ A modern, interactive portfolio website inspired by Persona 3 Reload's UI design
 - **Styling:** Custom CSS with Persona 3 theme
 - **APIs:** GitHub REST API for real-time stats
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 
@@ -79,7 +79,7 @@ npm run dev
 http://localhost:5173
 ```
 
-## 🏗️ Build for Production
+## Build for Production
 
 ```bash
 npm run build
@@ -87,7 +87,7 @@ npm run build
 
 The production-ready files will be in the `dist/` folder.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 persona3-portfolio/
@@ -117,7 +117,7 @@ persona3-portfolio/
 └── package.json
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### GitHub Stats
 
@@ -134,7 +134,7 @@ Update your information in:
 - `src/pages/ResumePage.jsx` - Education, skills, projects
 - `src/components/Socials.jsx` - Social media links
 
-## 🎨 Customization
+## Customization
 
 ### Colors
 
@@ -149,7 +149,7 @@ The Persona 3 theme uses these primary colors:
 - **Bebas Neue** - Labels and navigation
 - **Montserrat** - Body text
 
-## 🎵 Audio Files
+### Audio Files
 
 The portfolio includes:
 - Background music (looping soundtrack)
@@ -157,14 +157,14 @@ The portfolio includes:
 
 **Note:** Audio files are not included in the repository. Add your own audio files to `src/assets/audio/`.
 
-## 📱 Browser Support
+## Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to:
 1. Fork the repository
@@ -173,11 +173,11 @@ Contributions are welcome! Feel free to:
 4. Push to the branch
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👤 Author
+## Author
 
 **Rohit Poul**
 
@@ -185,18 +185,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - LinkedIn: [rohit-poul](https://www.linkedin.com/in/rohit-poul-403a41289)
 - Email: poulrohit258@gmail.com
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Persona 3 Reload](https://persona.atlus.com/p3r/) by Atlus for design inspiration
 - React and Vite communities for excellent tools
 - Framer Motion for smooth animations
 
-## 📝 Notes
+## Notes
 
 - This is a personal portfolio project inspired by Persona 3 Reload's UI design
 - All Persona 3 assets and trademarks belong to Atlus
 - This project is for educational and portfolio purposes only
-
----
-
-⭐ If you like this project, please give it a star on GitHub!
