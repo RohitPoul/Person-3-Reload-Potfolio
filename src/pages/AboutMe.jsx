@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import char1 from "../assets/images/characters/char1.png";
-import char2 from "../assets/images/characters/char2.png";
-import char3 from "../assets/images/characters/char3.png";
+import char1 from "../assets/images/characters/char1.webp";
+import char2 from "../assets/images/characters/char2.webp";
+import char3 from "../assets/images/characters/char3.webp";
 import bgVideo from "../assets/videos/main1.mp4";
-import icon1 from "../assets/images/icons/icon1.png";
-import icon2 from "../assets/images/icons/icon2.png";
-import icon3 from "../assets/images/icons/icon3.png";
-import mainm from "../assets/images/portraits/mainm.png";
-import mainm2 from "../assets/images/portraits/mainm2.png";
-import mainf from "../assets/images/portraits/mainf.png";
+import icon1 from "../assets/images/icons/icon1.webp";
+import icon2 from "../assets/images/icons/icon2.webp";
+import icon3 from "../assets/images/icons/icon3.webp";
+import mainm from "../assets/images/portraits/mainm.webp";
+import mainm2 from "../assets/images/portraits/mainm2.webp";
+import mainf from "../assets/images/portraits/mainf.webp";
 
 const CHARS = [char1, char2, char3];
 const MAIN_IMAGES = [mainm, mainm2, mainf];
@@ -119,7 +119,7 @@ export default function AboutMe() {
 
   return (
     <div id="menu-screen">
-      <video src={bgVideo} autoPlay loop muted playsInline />
+      <video src={bgVideo} autoPlay loop muted playsInline preload="metadata" />
       {revealed && <div className="sc-dim" onClick={(e) => { e.stopPropagation(); setRevealed(false); }} />}
       {revealed && (
         <div className={`sc-reveal-panel${mounted ? " mounted" : ""}`}>
