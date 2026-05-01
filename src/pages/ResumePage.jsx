@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import main2 from "../assets/videos/main2.mp4";
 
 const ITEMS = [
   { id: "i", badge: "I", title: "EDUCATION", subtitle: "B.Tech Information Technology", rank: 5 },
@@ -71,9 +72,9 @@ export default function ResumePage({ src }) {
 
   return (
     <div id="menu-screen">
-      <video src={src} autoPlay loop muted playsInline />
+      <video src={main2} autoPlay loop muted playsInline preload="metadata" />
       <div className="resume-entry-mask" aria-hidden="true">
-        <video className="resume-entry-video" src={src} autoPlay loop muted playsInline />
+        <video className="resume-entry-video" src={main2} autoPlay loop muted playsInline preload="metadata" />
       </div>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
