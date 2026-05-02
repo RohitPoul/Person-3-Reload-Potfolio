@@ -97,9 +97,9 @@ export default function SideProjPage() {
 
   return (
     <div id="menu-screen">
-      <video src={bgVideo} autoPlay loop muted playsInline />
+      <video src={bgVideo} autoPlay loop muted playsInline preload="none" />
       <div className="sp-entry-mask" aria-hidden="true">
-        <video className="sp-entry-video" src={bgVideo} autoPlay loop muted playsInline />
+        <video className="sp-entry-video" src={bgVideo} autoPlay loop muted playsInline preload="none" />
       </div>
 
       <style>{`
