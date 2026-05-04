@@ -192,6 +192,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
           .p3-menu {
             width: 100%;
+            padding: 24px;
+          }
+          .p3-name-tag {
+            display: none;
           }
           .p3-label-base {
             font-size: 46px !important;
@@ -204,6 +208,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .p3-highlight {
             display: none !important;
           }
+          .p3-hint {
+            bottom: 16px !important;
+            right: 16px !important;
+          }
           .p3-hint-row {
             font-size: 11px !important;
             letter-spacing: 1.5px !important;
@@ -211,9 +219,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         }
 
         @media (max-width: 430px) {
+          .p3-menu {
+            padding: 16px;
+          }
           .p3-label-base {
             font-size: 38px !important;
             letter-spacing: 0px !important;
+          }
+          .p3-hint {
+            bottom: 12px !important;
+            right: 12px !important;
           }
         }
       `}),(0,Z.jsxs)(`div`,{className:`p3-overlay`,children:[(0,Z.jsxs)(`div`,{className:`p3-name-tag`,children:[(0,Z.jsx)(`span`,{children:`Rohit's`}),(0,Z.jsx)(`span`,{children:`portfolio`})]}),(0,Z.jsx)(`nav`,{className:`p3-menu`,children:Tp.map((e,n)=>{let i=t===n,o=Math.abs(n-t),s=i?1:Math.max(.5,1-o*.2),c=e.label.length*e.fontSize*.6+80,d=e.fontSize*.94,f=Ep[n]??Ep[0];return(0,Z.jsxs)(`a`,{href:`#`,className:`p3-row ${i?`active`:``} ${r?`mounted`:``}`,style:{marginRight:e.offsetX,marginTop:e.offsetY,transitionDelay:r?`${n*80}ms`:`0ms`},onClick:t=>{t.preventDefault(),u(e.page)},onMouseEnter:()=>l(n),"aria-current":i?`page`:void 0,children:[(0,Z.jsx)(`div`,{className:`p3-glow`}),(0,Z.jsxs)(`div`,{className:`p3-skew-wrap`,style:{transform:`skewX(${e.skew}deg) skewY(${e.skewY}deg)`},children:[(0,Z.jsx)(`div`,{className:`p3-shadow-tri${i?` pop`:``}`,style:{width:c,height:d,clipPath:f(c,d)}},i?`pop-${n}-${a}`:`idle-${n}`),(0,Z.jsx)(`div`,{className:`p3-highlight`,style:{width:c,height:d,clipPath:f(c,d),transform:`translateY(-50%) scaleX(${i?1:0})`}}),(0,Z.jsxs)(`div`,{className:`p3-label-wrap`,style:{opacity:s},children:[(0,Z.jsx)(`span`,{className:`p3-label-base p3-label-dark`,style:{fontSize:e.fontSize},children:e.label}),(0,Z.jsx)(`span`,{className:`p3-label-base p3-label-bright`,style:{fontSize:e.fontSize,clipPath:f(c,d)},children:e.label})]})]})]},e.id)})}),(0,Z.jsx)(`div`,{className:`p3-hint ${r?`mounted`:``}`,children:s?(0,Z.jsx)(`div`,{className:`p3-hint-row`,children:(0,Z.jsx)(`span`,{children:`TAP TO SELECT`})}):(0,Z.jsxs)(Z.Fragment,{children:[(0,Z.jsxs)(`div`,{className:`p3-hint-row`,children:[(0,Z.jsx)(`span`,{className:`p3-hint-key`,children:`↑↓`}),(0,Z.jsx)(`span`,{children:`NAVIGATE`})]}),(0,Z.jsxs)(`div`,{className:`p3-hint-row`,children:[(0,Z.jsx)(`span`,{className:`p3-hint-key`,children:`↵`}),(0,Z.jsx)(`span`,{children:`CONFIRM`})]})]})})]})]})}var Op=``+new URL(`main2-BQjoxbTG.mp4`,import.meta.url).href,kp=[{id:`i`,badge:`I`,title:`EDUCATION`,subtitle:`B.Tech Information Technology`,rank:5},{id:`ii`,badge:`II`,title:`SKILLS`,subtitle:`AI/ML • Full-Stack • Desktop`,rank:5},{id:`iii`,badge:`III`,title:`PROJECTS`,subtitle:`3 Major Projects`,rank:5},{id:`iv`,badge:`IV`,title:`CERTIFICATIONS`,subtitle:`AI Engineer Professional`,rank:4}],Ap=[{index:`01`,title:`B.Tech Information Technology`,status:`GRADUATED`,detail:`SGGSIET, Nanded • CGPA: 6.90/10.0 • 2021-Present`},{index:`02`,title:`Higher Secondary Certificate`,status:`90.33%`,detail:`Shivaji College, Nanded • 2019-2021`},{index:`03`,title:`Secondary School Certificate`,status:`92.80%`,detail:`Bal Vidya Mandir, Parbhani • 2018-2019`}],jp=[{index:`01`,title:`Programming Languages`,status:`EXPERT`,detail:`C, C++, Python, JavaScript, TypeScript, SQL`},{index:`02`,title:`AI/ML & Computer Vision`,status:`ADVANCED`,detail:`PyTorch, TensorFlow, OpenCV, ONNX, MTCNN`},{index:`03`,title:`Web & Desktop Development`,status:`ADVANCED`,detail:`FastAPI, React.js, Electron.js, Qt 6, PostgreSQL`},{index:`04`,title:`Tools & Platforms`,status:`PROFICIENT`,detail:`Git, Docker, FFmpeg, ImageMagick, Linux`}],Mp=[{index:`01`,title:`PixelEraser Pro`,status:`2026`,detail:`AI Desktop Image Editor • C++, Qt 6, OpenCV, ONNX Runtime, Real-ESRGAN`},{index:`02`,title:`AI Hostel Management System`,status:`2025`,detail:`Full-Stack Attendance Platform • Python, FastAPI, React, PostgreSQL, MTCNN`},{index:`03`,title:`Telegram Sticker Maker`,status:`2025`,detail:`Automation Tool • Python, Electron, FFmpeg, ImageMagick, Telegram Bot API`}],Np=[{index:`01`,title:`AI Engineer Professional Certificate`,status:`MAR 2026`,detail:`School of AI • Completed comprehensive AI/ML training program`},{index:`02`,title:`Relevant Coursework`,status:`COMPLETED`,detail:`Data Structures, DBMS, Software Engineering, Computer Networks, ML, Deep Learning`}];function Pp({src:e}){let t=pt(),[n,r]=(0,w.useState)(1),[i,a]=(0,w.useState)(!1);return(0,w.useEffect)(()=>{let e=setTimeout(()=>a(!0),80);return()=>clearTimeout(e)},[]),(0,w.useEffect)(()=>{let e=e=>{e.key===`ArrowUp`&&r(e=>Math.max(0,e-1)),e.key===`ArrowDown`&&r(e=>Math.min(kp.length-1,e+1)),e.key===`ArrowLeft`&&t(-1),(e.key===`Escape`||e.key===`Backspace`)&&t(-1)};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[t]),(0,Z.jsxs)(`div`,{id:`menu-screen`,children:[(0,Z.jsx)(`video`,{src:Op,autoPlay:!0,loop:!0,muted:!0,playsInline:!0,preload:`metadata`}),(0,Z.jsx)(`div`,{className:`resume-entry-mask`,"aria-hidden":`true`,children:(0,Z.jsx)(`video`,{className:`resume-entry-video`,src:Op,autoPlay:!0,loop:!0,muted:!0,playsInline:!0,preload:`metadata`})}),(0,Z.jsx)(`style`,{children:`
@@ -580,9 +595,29 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             margin: 0 0 8px 8px !important;
           }
 
-          .resume-card { height: 86px !important; }
+          .resume-card { 
+            height: 82px !important; 
+          }
 
-          .resume-title { font-size: 38px !important; }
+          .resume-card-wrap.active .resume-card {
+            height: 96px !important;
+          }
+
+          .resume-title { 
+            font-size: 36px !important; 
+          }
+
+          .resume-subtitle {
+            font-size: 20px !important;
+          }
+
+          .resume-rank-label {
+            font-size: 22px !important;
+          }
+
+          .resume-rank-number {
+            font-size: 56px !important;
+          }
 
           .resume-detail-panel {
             position: relative !important;
@@ -592,6 +627,53 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             min-height: unset !important;
             margin: 8px 14px 16px !important;
             pointer-events: all !important;
+          }
+
+          .resume-detail-top {
+            grid-template-columns: 50px 1fr auto;
+            min-height: 70px;
+            padding: 0 12px;
+            gap: 10px;
+          }
+
+          .resume-detail-top-index {
+            font-size: 34px;
+          }
+
+          .resume-detail-top-title {
+            font-size: 28px;
+          }
+
+          .resume-detail-top-progress {
+            font-size: 32px;
+          }
+
+          .resume-detail-row {
+            grid-template-columns: 40px 1fr auto;
+            min-height: 50px;
+            padding: 0 10px;
+            gap: 10px;
+          }
+
+          .resume-detail-row-index {
+            font-size: 22px;
+          }
+
+          .resume-detail-row-title {
+            font-size: 22px;
+          }
+
+          .resume-detail-status {
+            font-size: 18px;
+            padding: 5px 10px;
+          }
+
+          .resume-detail-bottom-title {
+            font-size: 24px;
+          }
+
+          .resume-detail-bullet {
+            font-size: 17px;
           }
 
           .resume-mobile-controls {
@@ -605,6 +687,58 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             justify-content: flex-start;
             gap: 8px;
             pointer-events: all;
+          }
+        }
+
+        @media (max-width: 430px) {
+          .resume-list-tag {
+            font-size: 48px !important;
+          }
+
+          .resume-card {
+            height: 74px !important;
+          }
+
+          .resume-card-wrap.active .resume-card {
+            height: 86px !important;
+          }
+
+          .resume-title {
+            font-size: 30px !important;
+          }
+
+          .resume-subtitle {
+            font-size: 18px !important;
+          }
+
+          .resume-rank-label {
+            font-size: 20px !important;
+          }
+
+          .resume-rank-number {
+            font-size: 48px !important;
+          }
+
+          .resume-detail-top-title {
+            font-size: 22px;
+          }
+
+          .resume-detail-row-title {
+            font-size: 18px;
+          }
+
+          .resume-detail-bullet {
+            font-size: 15px;
+          }
+        }
+
+        @media (min-width: 769px) and (max-width: 1200px) {
+          .resume-stack {
+            transform: scale(0.88);
+          }
+          .resume-detail-panel {
+            right: 2vw;
+            width: min(42vw, 580px);
           }
         }
 
@@ -1090,7 +1224,41 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .sc-bar,
           .sc-bar-red {
-            width: min(80vw, 480px) !important;
+            width: min(82vw, 480px) !important;
+          }
+
+          .sc-bar {
+            height: 58px !important;
+          }
+
+          .sc-bar-red {
+            height: 58px !important;
+          }
+
+          .sc-bar-outer.active .sc-bar {
+            height: 72px !important;
+          }
+
+          .sc-bar-outer.active .sc-bar-red {
+            height: 72px !important;
+          }
+
+          .sc-role {
+            font-size: 36px !important;
+          }
+
+          .sc-label {
+            font-size: 20px !important;
+            letter-spacing: 2px !important;
+          }
+
+          .sc-icon {
+            font-size: 18px !important;
+          }
+
+          .sc-char {
+            left: 80px !important;
+            max-width: 120px !important;
           }
 
           .sc-right-nav {
@@ -1102,9 +1270,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             top: auto;
             left: 8px;
             right: 8px;
-            bottom: 58px;
+            bottom: 64px;
             height: auto;
-            max-height: 38vh;
+            max-height: 36vh;
             gap: 4px;
             padding: 4px 0;
             overflow-y: auto;
@@ -1123,6 +1291,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .sc-info-bar-count {
             margin-right: 10px;
             font-size: 14px;
+          }
+
+          .sc-info-bar-icon {
+            height: 48%;
+            margin-left: 10px;
           }
 
           .sc-footer {
@@ -1145,16 +1318,71 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .sc-mobile-portrait {
             display: block;
             position: fixed;
-            right: -8vw;
+            right: -10vw;
             top: 0;
             bottom: 0;
-            width: 52vw;
+            width: 54vw;
             object-fit: cover;
             object-position: top center;
             z-index: 5;
             pointer-events: none;
-            mask-image: linear-gradient(to left, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
-            -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
+            mask-image: linear-gradient(to left, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.52) 58%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.52) 58%, transparent 100%);
+          }
+        }
+
+        @media (max-width: 430px) {
+          .sc-bar,
+          .sc-bar-red {
+            width: min(78vw, 420px) !important;
+          }
+
+          .sc-bar {
+            height: 52px !important;
+          }
+
+          .sc-bar-red {
+            height: 52px !important;
+          }
+
+          .sc-bar-outer.active .sc-bar {
+            height: 64px !important;
+          }
+
+          .sc-bar-outer.active .sc-bar-red {
+            height: 64px !important;
+          }
+
+          .sc-role {
+            font-size: 30px !important;
+          }
+
+          .sc-label {
+            font-size: 17px !important;
+            letter-spacing: 1.5px !important;
+          }
+
+          .sc-char {
+            left: 60px !important;
+            max-width: 100px !important;
+          }
+
+          .sc-info-panel {
+            bottom: 60px;
+            max-height: 32vh;
+          }
+
+          .sc-info-bar-wrap {
+            height: 38px !important;
+          }
+
+          .sc-info-bar-text {
+            font-size: 13px;
+          }
+
+          .sc-mobile-portrait {
+            right: -12vw;
+            width: 56vw;
           }
         }
 
@@ -1706,13 +1934,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .sc-bar-outer {
             z-index: 10 !important;
+            left: 5vw;
           }
 
           .sc-bar-outer:nth-child(1) { 
-            top: calc(50vh - 180px);
+            top: calc(50vh - 200px);
           }
           .sc-bar-outer:nth-child(2) { 
-            top: calc(50vh - 90px);
+            top: calc(50vh - 100px);
           }
           .sc-bar-outer:nth-child(3) { 
             top: calc(50vh);
@@ -1751,16 +1980,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .sc-main-portrait-shell {
             top: 0;
-            right: -6vw;
-            width: 50vw;
-            height: 46vh;
+            right: -10vw;
+            width: 55vw;
+            height: 40vh;
             z-index: 15002 !important;
           }
           
-          /* Make mainf portrait overlap more on mobile */
           .sc-main-portrait-shell:has(img[src*="mainf"]) {
-            right: -12vw;
-            width: 55vw;
+            right: -15vw;
+            width: 60vw;
           }
 
           .sc-main-portrait {
@@ -1769,11 +1997,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           }
 
           .sc-reveal-panel {
-            top: 42vh !important;
-            left: 2vw !important;
-            right: 2vw !important;
-            width: auto !important;
-            height: 52vh !important;
+            top: 45vh !important;
+            left: 5vw !important;
+            right: 5vw !important;
+            width: 90vw !important;
+            height: 50vh !important;
             z-index: 15001 !important;
             transform: translateX(0) rotate(0deg) !important;
             clip-path: polygon(0 0, 100% 0, calc(100% - 18px) 100%, 0 100%);
@@ -1803,36 +2031,43 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .sc-reveal-upper-bar {
             top: 8%;
             height: 48%;
-            width: 96%;
-            left: 2%;
+            width: 94%;
+            left: 3%;
           }
 
           .sc-reveal-upper-line {
-            font-size: 12px;
-            line-height: 1.2;
-            padding: 0 8px;
+            font-size: 11px;
+            line-height: 1.3;
+            padding: 0 6px;
           }
 
           .sc-reveal-lower-bar {
             top: 62%;
-            width: 90%;
-            bottom: 6%;
+            width: 88%;
+            left: 3%;
+            bottom: 8%;
             height: auto;
             max-height: none;
-            font-size: 13px;
-            line-height: 1.3;
-            padding: 8px 14px;
+            font-size: 12px;
+            line-height: 1.4;
+            padding: 8px 12px;
           }
 
           .sc-right-nav {
-            top: 2vh;
-            left: 4vw;
-            transform: translateX(0) rotate(-12deg);
+            top: 3vh;
+            left: 5vw;
+            transform: translateX(0) rotate(-8deg);
             z-index: 15003 !important;
           }
           
           .sc-right-nav .sc-nav-btn {
-            font-size: 60px;
+            font-size: 50px;
+          }
+
+          .sc-right-nav .sc-nav-dot {
+            width: 12px;
+            height: 12px;
+            margin: 0 6px;
           }
 
           .sc-mobile-controls {
@@ -1850,6 +2085,43 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
           .sc-footer {
             display: none;
+          }
+        }
+
+        @media (max-width: 430px) {
+          .sc-bar {
+            width: 85vw;
+            height: 52px;
+          }
+
+          .sc-bar-red {
+            width: 85vw;
+            height: 52px;
+          }
+
+          .sc-bar-outer {
+            left: 7.5vw;
+          }
+
+          .sc-label {
+            font-size: 16px;
+            letter-spacing: 1px;
+          }
+
+          .sc-role {
+            font-size: 28px;
+          }
+
+          .sc-reveal-upper-line {
+            font-size: 10px;
+          }
+
+          .sc-reveal-lower-bar {
+            font-size: 11px;
+          }
+
+          .sc-right-nav .sc-nav-btn {
+            font-size: 40px;
           }
         }
 
@@ -2247,9 +2519,26 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             margin: 0 0 8px 8px !important;
           }
 
-          .sp-card { height: 80px !important; }
+          .sp-card { 
+            height: 76px !important; 
+          }
 
-          .sp-title { font-size: 28px !important; }
+          .sp-card-wrap.active .sp-card {
+            height: 88px !important;
+          }
+
+          .sp-title { 
+            font-size: 26px !important; 
+          }
+
+          .sp-lang-badge {
+            font-size: 16px !important;
+            padding: 3px 8px !important;
+          }
+
+          .sp-subtitle {
+            font-size: 16px !important;
+          }
 
           .sp-detail-panel {
             position: relative !important;
@@ -2261,6 +2550,38 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             min-height: unset !important;
             margin: 8px 14px 16px !important;
             pointer-events: all !important;
+          }
+
+          .sp-detail-top {
+            grid-template-columns: 40px 1fr auto;
+            min-height: 60px;
+            padding: 0 12px;
+            gap: 8px;
+          }
+
+          .sp-detail-top-index {
+            font-size: 28px;
+          }
+
+          .sp-detail-top-title {
+            font-size: 20px;
+          }
+
+          .sp-detail-top-lang {
+            font-size: 24px;
+          }
+
+          .sp-detail-desc-text {
+            font-size: 16px;
+          }
+
+          .sp-tag {
+            font-size: 14px;
+          }
+
+          .sp-github-btn {
+            font-size: 18px;
+            padding: 10px 20px;
           }
 
           .sp-footer { display: none; }
@@ -2276,6 +2597,44 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             justify-content: flex-start;
             gap: 8px;
             pointer-events: all;
+          }
+        }
+
+        @media (max-width: 430px) {
+          .sp-list-tag {
+            font-size: 48px !important;
+          }
+
+          .sp-card {
+            height: 68px !important;
+          }
+
+          .sp-card-wrap.active .sp-card {
+            height: 78px !important;
+          }
+
+          .sp-title {
+            font-size: 22px !important;
+          }
+
+          .sp-lang-badge {
+            font-size: 14px !important;
+          }
+
+          .sp-subtitle {
+            font-size: 14px !important;
+          }
+
+          .sp-detail-top-title {
+            font-size: 18px;
+          }
+
+          .sp-detail-desc-text {
+            font-size: 14px;
+          }
+
+          .sp-tag {
+            font-size: 12px;
           }
         }
 
@@ -2598,6 +2957,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         .gh-stats-img-wrap.loaded { opacity: 1; }
         .gh-stats-img {
           width: 100%;
+          max-width: 100%;
+          height: auto;
           border-radius: 4px;
           display: block;
           filter: brightness(0.92);
@@ -2808,6 +3169,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           .gh-list-tag { font-size: 52px !important; margin: 0 0 8px 8px !important; }
           .gh-card { height: 76px !important; }
           .gh-title { font-size: 26px !important; }
+          .gh-lang-badge { font-size: 16px !important; padding: 3px 8px !important; }
+          .gh-subtitle { font-size: 14px !important; }
           .gh-detail-panel {
             position: relative !important;
             top: 0 !important;
@@ -2817,7 +3180,31 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             bottom: auto !important;
             margin: 8px 14px 16px !important;
             pointer-events: all !important;
+            max-height: none !important;
           }
+          .gh-profile-detail,
+          .gh-proj-detail {
+            max-height: none !important;
+          }
+          .gh-stats-img {
+            max-width: 100%;
+            height: auto;
+          }
+          .gh-detail-top {
+            grid-template-columns: 40px 1fr auto;
+            min-height: 60px;
+            padding: 0 12px;
+            gap: 8px;
+          }
+          .gh-detail-top-index { font-size: 28px; }
+          .gh-detail-top-title { font-size: 20px; }
+          .gh-detail-top-lang { font-size: 24px; }
+          .gh-profile-name { font-size: 32px; }
+          .gh-profile-role { font-size: 14px; }
+          .gh-profile-bio-item { font-size: 13px; }
+          .gh-stack-tag { font-size: 13px; }
+          .gh-detail-desc-text { font-size: 16px; }
+          .gh-tag { font-size: 14px; }
           .gh-footer { display: none; }
           .gh-mobile-controls {
             position: fixed;
@@ -2831,6 +3218,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             gap: 8px;
             pointer-events: all;
           }
+        }
+
+        @media (max-width: 430px) {
+          .gh-list-tag { font-size: 44px !important; }
+          .gh-card { height: 68px !important; }
+          .gh-title { font-size: 22px !important; }
+          .gh-lang-badge { font-size: 14px !important; }
+          .gh-subtitle { font-size: 12px !important; }
+          .gh-detail-top-title { font-size: 18px; }
+          .gh-profile-name { font-size: 28px; }
+          .gh-detail-desc-text { font-size: 14px; }
         }
 
         @media (min-width: 769px) and (max-width: 1200px) {
