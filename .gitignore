@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+package-lock.json
+.pnp
+.pnp.js
+
+# Build output & caches
+dist/
+.cloudflare/
+dist-ssr/
+build/
+.vite/
+.cache/
+.eslintcache
+*.tsbuildinfo
+
+# Testing & coverage
+coverage/
+.nyc_output/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editors & IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
+
+# OS & temporary files
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+*.tmp
+*.bak
+
+# Local AI agent skills/config
+.agents/
+
+# Local raw asset collection & media assets (deployed via Cloudflare, not pushed to Git)
+collection/
+public/streams/
+src/assets/videos/
+src/assets/audio/
+src/assets/images/
+
+# Local personal profile overrides (keeps public repo free of personal info)
+src/data/profile.local.js

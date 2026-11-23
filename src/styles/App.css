@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #050814;
+  overflow: hidden;
+}
+
+#menu-screen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  isolation: isolate;
+  background: #051348;
+}
+
+#menu-screen video {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 65% center;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  #menu-screen video {
+    object-position: 20% center;
+  }
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.p3-atlus-credit {
+  position: fixed;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9000;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.42);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* Tablet defaults for main menu */
+@media (max-width: 1024px) {
+  #menu-screen,
+  #main {
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  .p3-menu {
+    padding: clamp(12px, 2.5vw, 24px) !important;
+    transform: scale(0.86);
+    transform-origin: center;
+  }
+
+  .p3-name-tag {
+    font-size: clamp(56px, 9vw, 94px) !important;
+    top: clamp(6px, 2vw, 14px) !important;
+    left: clamp(8px, 2vw, 18px) !important;
+    transform: rotate(12deg) !important;
+  }
+
+  .p3-hint {
+    bottom: max(12px, env(safe-area-inset-bottom)) !important;
+    right: clamp(10px, 2.5vw, 18px) !important;
+  }
+}
+
+/* Phone touch defaults for main menu */
+@media (max-width: 768px) {
+  body {
+    overflow: hidden;
+    overscroll-behavior: none;
+    touch-action: manipulation;
+  }
+
+  a,
+  button,
+  [role="navigation"] a {
+    touch-action: manipulation;
+  }
+
+  .p3-menu {
+    transform: none !important;
+    padding: 0 16px !important;
+    gap: 6px !important;
+    align-items: flex-start !important;
+  }
+
+  .p3-row {
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .p3-name-tag {
+    font-size: clamp(44px, 10vw, 68px) !important;
+    letter-spacing: 1px !important;
+    line-height: 0.9 !important;
+  }
+
+  .p3-hint {
+    font-size: 11px !important;
+    gap: 2px !important;
+  }
+
+  .p3-hint-row {
+    font-size: 10px !important;
+    letter-spacing: 1px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .p3-menu {
+    transform: none !important;
+    padding: 0 10px !important;
+  }
+
+  .p3-name-tag {
+    font-size: clamp(34px, 10vw, 48px) !important;
+    left: 12px !important;
+    top: 8px !important;
+  }
+}

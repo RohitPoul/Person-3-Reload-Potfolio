@@ -1,0 +1,48 @@
+@import './tokens.css';
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: var(--p3-black);
+  color: var(--p3-text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  overscroll-behavior: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+img {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Allow drag-to-select & right-click copy on readable copyable text fields */
+.p3-char-name,
+.p3-char-arcana,
+.p3-char-meta-val,
+.p3-char-bio-bar,
+.sl-story,
+.sl-dossier-title,
+.sl-dossier-text,
+.cp-summary,
+.cp-sub,
+.eq-head-sub,
+.eq-effect-url-preview,
+.eq-effect-text,
+.qst-task-desc {
+  user-select: text;
+  -webkit-user-select: text;
+}

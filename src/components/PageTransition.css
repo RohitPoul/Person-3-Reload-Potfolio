@@ -1,0 +1,64 @@
+.pt-root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.pt-impact-img {
+  position: fixed;
+  inset: 0;
+  z-index: 30000;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  transform-origin: var(--pt-origin, 50% 50%);
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+/* Cut 1 (0–48ms, ~3 frames @ 60fps): Dark Negative Sakuga Hit with kinetic punch */
+.pt-cut-1 {
+  transform: scale(1.035);
+  animation: pt-sakuga-1 148ms steps(1, end) forwards;
+}
+
+/* Cut 2 (48–100ms, ~3 frames @ 60fps): Blazing White-Out 1-Bit Sakuga Smash */
+.pt-cut-2 {
+  transform: scale(1);
+  animation: pt-sakuga-2 148ms steps(1, end) forwards;
+}
+
+/* Cut 3 (100–148ms, ~3 frames @ 60fps): Pure white speedlines burning directly over live video */
+.pt-cut-3 {
+  mix-blend-mode: screen;
+  transform: scale(1.06);
+  animation: pt-sakuga-3 148ms steps(1, end) forwards;
+}
+
+@keyframes pt-sakuga-1 {
+  0% { opacity: 1; }
+  33% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes pt-sakuga-2 {
+  0% { opacity: 0; }
+  33% { opacity: 1; }
+  68% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes pt-sakuga-3 {
+  0% { opacity: 0; }
+  68% { opacity: 0.88; }
+  100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pt-impact-img {
+    display: none;
+  }
+}

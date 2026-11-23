@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Persona 3 Reload Portfolio — Unified Design Tokens
+   Preserves P3R's Dark Hour HUD aesthetic while keeping typography,
+   colors, spacing, and motion consistent across every screen.
+   ========================================================================== */
+
+:root {
+  /* Typography */
+  --font-display: 'Anton', Impact, sans-serif;
+  --font-hud: 'Bebas Neue', 'Barlow Condensed', sans-serif;
+  --font-hud-condensed: 'Barlow Condensed', sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* Tartarus Dark Hour Neutral Ramp (Ink-tinted) */
+  --p3-black: #050814;
+  --p3-navy-deep: #070f38;
+  --p3-navy: #0d1754;
+  --p3-navy-raised: #132170;
+  --p3-panel-bg: rgba(8, 16, 62, 0.94);
+  --p3-panel-card: rgba(10, 20, 74, 0.94);
+
+  /* Signature P3R Ice-Cyan */
+  --p3-cyan: #3ce2ff;
+  --p3-cyan-bright: #8ef5ff;
+  --p3-cyan-pale: #d3fdff;
+  --p3-cyan-hairline: rgba(142, 245, 255, 0.16);
+  --p3-cyan-border: rgba(142, 245, 255, 0.32);
+
+  /* Signature P3R Crimson Slash Accent */
+  --p3-crimson: #c4001a;
+  --p3-crimson-bright: #e01e37;
+  --p3-crimson-deep: #6b0010;
+
+  /* Text Roles (high contrast on dark / light surfaces) */
+  --p3-text-primary: #eef6ff;
+  --p3-text-secondary: #a8c7e8;
+  --p3-text-muted: #7695b8;
+  --p3-text-on-light: #091233;
+  --p3-text-on-light-muted: rgba(9, 18, 51, 0.68);
+  --p3-white: #ffffff;
+
+  /* Motion — one unified snappy curve */
+  --p3-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --p3-dur-fast: 160ms;
+  --p3-dur-mid: 260ms;
+  --p3-dur-enter: 400ms;
+
+  /* Spacing scale (4px grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+}
+
+/* Tabular numbers helper for indices, ranks, progress, and stats */
+.p3-num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Consistent keyboard focus ring across interactive controls */
+button:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--p3-cyan);
+  outline-offset: 2px;
+}
