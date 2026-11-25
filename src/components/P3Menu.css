@@ -1,0 +1,200 @@
+.p3-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.p3-menu {
+  position: relative;
+  z-index: 20;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: all;
+}
+
+@keyframes p3-row-in {
+  from {
+    opacity: 0;
+    transform: translate3d(28px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.p3-row {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  animation: p3-row-in 240ms var(--p3-ease) both;
+}
+.p3-row:nth-child(2) { animation-delay: 20ms; }
+.p3-row:nth-child(3) { animation-delay: 40ms; }
+.p3-row:nth-child(4) { animation-delay: 60ms; }
+.p3-row:nth-child(5) { animation-delay: 80ms; }
+
+.p3-skew-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  isolation: isolate;
+}
+
+.p3-shadow-tri {
+  position: absolute;
+  top: 50%;
+  transform-origin: left center;
+  background: var(--p3-crimson-bright);
+  z-index: 1;
+  pointer-events: none;
+  transform: translateY(-40%) translateX(-12px) scaleX(0);
+  transition: transform 200ms var(--p3-ease);
+}
+.p3-row.active .p3-shadow-tri {
+  transform: translateY(-40%) translateX(-12px) scaleX(1);
+}
+
+.p3-highlight {
+  position: absolute;
+  top: 50%;
+  transform-origin: left center;
+  background: var(--p3-white);
+  z-index: 2;
+  transition: transform 210ms var(--p3-ease);
+  pointer-events: none;
+}
+
+.p3-label-wrap {
+  position: relative;
+  z-index: 3;
+}
+
+.p3-label-base {
+  font-family: var(--font-display);
+  font-style: italic;
+  letter-spacing: 2px;
+  line-height: 0.85;
+  display: block;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.p3-label-dark {
+  color: var(--p3-cyan);
+  transition: color var(--p3-dur-fast) var(--p3-ease);
+}
+.p3-row.active .p3-label-dark { color: var(--p3-crimson-deep); }
+.p3-row:hover:not(.active) .p3-label-dark { color: var(--p3-cyan-bright); }
+
+.p3-label-bright {
+  color: var(--p3-crimson-bright);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity var(--p3-dur-fast) var(--p3-ease);
+}
+.p3-row.active .p3-label-bright { opacity: 1; }
+
+@keyframes p3-hint-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.p3-hint {
+  position: absolute;
+  bottom: 24px;
+  right: 28px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  font-family: var(--font-hud);
+  animation: p3-hint-in 260ms var(--p3-ease) 120ms both;
+}
+.p3-hint-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: rgba(238, 246, 255, 0.56);
+}
+.p3-hint-key {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  color: var(--p3-text-primary);
+  background: rgba(7, 15, 56, 0.72);
+  border: 1px solid var(--p3-cyan-border);
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+
+.p3-name-tag {
+  position: absolute;
+  top: 20px;
+  left: 68px;
+  z-index: 20;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 108px;
+  line-height: 0.88;
+  letter-spacing: 2px;
+  color: rgba(10, 10, 14, 0.64);
+  transform: rotate(18deg);
+  transform-origin: left top;
+  user-select: none;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.p3-name-tag span:first-child {
+  color: rgba(0, 0, 0, 0.86);
+}
+
+@media (max-width: 768px) {
+  .p3-overlay {
+    align-items: center;
+    justify-content: center;
+  }
+  .p3-menu {
+    width: 100%;
+  }
+  .p3-label-base {
+    font-size: 46px !important;
+    letter-spacing: 1px !important;
+  }
+  .p3-skew-wrap {
+    transform: none !important;
+  }
+  .p3-shadow-tri,
+  .p3-highlight {
+    display: none !important;
+  }
+  .p3-hint-row {
+    font-size: 11px !important;
+    letter-spacing: 1.5px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .p3-label-base {
+    font-size: 38px !important;
+    letter-spacing: 0px !important;
+  }
+}
