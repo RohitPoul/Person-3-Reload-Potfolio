@@ -127,6 +127,14 @@ body {
     font-size: 10px !important;
     letter-spacing: 1px !important;
   }
+
+  .p3-atlus-credit {
+    left: 12px;
+    transform: none;
+    bottom: max(12px, env(safe-area-inset-bottom));
+    font-size: 8.5px;
+    letter-spacing: 0.04em;
+  }
 }
 
 @media (max-width: 430px) {
