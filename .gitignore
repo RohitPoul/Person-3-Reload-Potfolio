@@ -53,12 +53,10 @@ ehthumbs.db
 # Local AI agent skills/config
 .agents/
 
-# Local raw asset collection & media assets (deployed via Cloudflare, not pushed to Git)
+# Local raw asset collection & copyrighted BGM (deployed via Cloudflare, not pushed to Git)
 collection/
-public/streams/
 src/assets/videos/
-src/assets/audio/
-src/assets/images/
+src/assets/audio/bgm-theme.mp3
 
 # Local personal profile overrides (keeps public repo free of personal info)
 src/data/profile.local.js
